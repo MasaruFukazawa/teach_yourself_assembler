@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  gas-dev:
+    build: .
+    container_name: gas-dev
+    volumes:
+      - ./src:/src
+    command: tail -f /dev/null
